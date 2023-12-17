@@ -1,19 +1,27 @@
 import { useState } from "react";
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+interface NavbarProps {
+  // Optional className prop for additional styling
+  className?: string;
+}
+
+function Navbar({ className }: NavbarProps) {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-4 py-2 bg-white text-black z-50">
+    <nav
+      className={`w-full flex items-center justify-between pt-8 bg-white text-black 
+      z-50 ${className || ""}`}
+    >
       {/* Logo */}
-      <a href="/" className="text-xl font-bold">
+      <a href="/" className="text-xl font-bold half-highlight-accent-bg">
         Sandipan Kalita.
       </a>
 
       {/* Links (Hidden on Mobile) */}
-      <ul className="hidden lg:flex space-x-4">
+      <ul className="hidden md:flex lg:flex space-x-4">
         <li>
           <a href="/blog" className="text-black-300 hover:text-black px-3 py-2">
             Blog
@@ -30,7 +38,7 @@ function Navbar() {
       </ul>
 
       {/* Mobile Menu Toggle Button */}
-      <button className="lg:hidden" onClick={handleClick}>
+      <button className="md:hidden lg:hidden" onClick={handleClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
