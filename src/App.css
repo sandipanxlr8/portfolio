@@ -4,8 +4,8 @@
       yellow
     )
     /* Starting position of the gradient */ 0
-    /* Position of the gradient along the y-axis */ 73%
+    /* Position of the gradient along the y-axis */ 80%
     /* Size of the gradient along the x-axis (full width) */ / 100%
-    /* Size of the gradient along the y-axis (1rem height) */ 0.25em
+    /* Size of the gradient along the y-axis (1rem height) */ 0.3em
     /* Background will not repeat */ no-repeat;
 }
