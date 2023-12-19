@@ -10,7 +10,7 @@ function Home() {
     <div className="px-7 sm:px-7 md:px-[9rem]">
       <Navbar />
       {/* landing section */}
-      <div className="mt-12 lg:flex lg:flex-row">
+      <div className="mt-12 lg:flex lg:flex-row lg:px-4">
         <div className="pt-14 lg:pt-[120px]">
           <h2 className="text-3xl/10">
             Hello 👋, I'm Sandipan Kalita.
@@ -31,8 +31,8 @@ function Home() {
             </Button> */}
           </div>
         </div>
-        <div className="flex align-middle">
-          <img className="" src={Working} alt="working logo" />
+        <div className="flex align-middle sm:mt-4">
+          <img src={Working} alt="working logo" />
         </div>
       </div>
       {/* landing section ends*/}
