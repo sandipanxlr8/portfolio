@@ -1,0 +1,29 @@
+[
+  {
+    "name": "project1",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Ipsum malesuada cras volutpat morbi eget a cursus nunc quis. Ac curabitur eleifend non est diam est.",
+    "tech": ["tech1", "test3", "tech3"],
+    "isGithub": true,
+    "githubUrl": "link",
+    "isLive": false,
+    "liveUrl": ""
+  },
+  {
+    "name": "project2",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Ipsum malesuada cras volutpat morbi eget a cursus nunc quis.",
+    "tech": ["tech1", "test3", "tech3", "tech3"],
+    "isGithub": true,
+    "githubUrl": "link",
+    "isLive": true,
+    "liveUrl": "link"
+  },
+  {
+    "name": "project3",
+    "desc": "Lorem ipsum dolor sit amet consectetur. Ipsum malesuada cras volutpat morbi eget a cursus nunc quis. Eleifend non est diam est.",
+    "tech": ["tech1", "test3", "tech3", "tech3"],
+    "isGithub": false,
+    "githubUrl": "",
+    "isLive": true,
+    "liveUrl": "link"
+  }
+]
