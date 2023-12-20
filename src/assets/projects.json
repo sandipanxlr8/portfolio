@@ -10,7 +10,7 @@
   },
   {
     "name": "project2",
-    "desc": "Lorem ipsum dolor sit amet consectetur. Ipsum malesuada cras volutpat morbi eget a cursus nunc quis.",
+    "desc": "Lorem ipsum dolor sit amet consectetur.",
     "tech": ["tech1", "test3", "tech3", "tech3"],
     "isGithub": true,
     "githubUrl": "link",

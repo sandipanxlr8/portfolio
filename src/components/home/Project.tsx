@@ -19,14 +19,14 @@ interface ProjectPropsInterface {
 function Project({ project }: ProjectPropsInterface) {
   return (
     <div className="lg:flex lg:flex-row">
-      <div className="px-6 py-6">
+      <div className="px-6 py-6 lg:w-[45%]">
         <img
           src="../src/assets/project.png"
           alt="project image"
           className="rounded-2xl lg:w-[46rem] aspect-[16/10]"
         />
       </div>
-      <div className="py-6 px-6 sm:px-6 lg:px-14">
+      <div className="py-6 px-6 sm:px-6 lg:px-14 lg:w-[55%]">
         <h3 className="text-2xl">{project.name}</h3>
         <p className="mt-6">{project.desc}</p>
         <div className="mt-4">
@@ -35,13 +35,13 @@ function Project({ project }: ProjectPropsInterface) {
         </div>
         <div className="mt-6">
           {project.isGithub && (
-            <Button size={"default"}>
+            <Button className="mr-4" size={"default"}>
               Check on GitHub
               <ExternalLink className="ml-3 h-5 w-5" />
             </Button>
           )}
           {project.isLive && (
-            <Button className="ml-4" size={"default"}>
+            <Button size={"default"}>
               Live
               <ExternalLink className="ml-3 h-5 w-5" />
             </Button>
