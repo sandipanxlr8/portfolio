@@ -1,0 +1,32 @@
+[
+  {
+    "cardName": "Frontend",
+    "icons": [
+      {
+        "iconName": "FaHtml5",
+        "iconTechName": "HTML",
+        "iconPack": "fa"
+      },
+      {
+        "iconName": "FaCss3",
+        "iconTechName": "CSS",
+        "iconPack": "fa"
+      },
+      {
+        "iconName": "SiJavascript",
+        "iconTechName": "JavaScript",
+        "iconPack": "si"
+      },
+      {
+        "iconName": "FaReact",
+        "iconTechName": "React",
+        "iconPack": "fa"
+      },
+      {
+        "iconName": "SiTailwindcss",
+        "iconTechName": "Tailwind",
+        "iconPack": "si"
+      }
+    ]
+  }
+]

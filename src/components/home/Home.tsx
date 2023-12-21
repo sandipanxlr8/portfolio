@@ -3,7 +3,8 @@ import Working from "@/assets/working.svg";
 import { Button } from "../ui/button";
 import { Download } from "lucide-react";
 // import { Copy } from "lucide-react";
-import Projects from "./Projects";
+import Projects from "./projects/Projects";
+import Technologies from "./technologies/Technologies";
 
 function Home() {
   return (
@@ -39,6 +40,9 @@ function Home() {
       {/* projects section */}
       <Projects />
       {/* projects section ends */}
+      {/* Technologies section */}
+      <Technologies />
+      {/* Technologies section ends */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
+import { Badge } from "../../ui/badge";
+import { Button } from "../../ui/button";
 import { ExternalLink } from "lucide-react";
 
 interface ProjectInterface {
@@ -31,7 +31,11 @@ function Project({ project }: ProjectPropsInterface) {
         <p className="mt-6">{project.desc}</p>
         <div className="mt-4">
           {project.tech &&
-            project.tech.map((tech) => <Badge className="mx-2">{tech}</Badge>)}
+            project.tech.map((tech) => (
+              <Badge key={tech} className="mx-2">
+                {tech}
+              </Badge>
+            ))}
         </div>
         <div className="mt-6">
           {project.isGithub && (
