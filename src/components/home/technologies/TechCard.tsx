@@ -9,13 +9,13 @@ interface TechCardProps {
 
 function TechCard({ tech }: TechCardProps) {
   return (
-    <div>
-      <Card className="w-[350px]">
+    <div className="sm:mt-8">
+      <Card className="mx-6 bg-[#778da9]">
         <CardHeader>
-          <CardTitle>{tech.cardName}</CardTitle>
+          <CardTitle className="text-center">{tech.cardName}</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 lg:grid-cols-2 gap-12">
             {tech.icons.map((iconData) => {
               let IconComponent;
               switch (iconData.iconPack) {
@@ -36,7 +36,7 @@ function TechCard({ tech }: TechCardProps) {
               return (
                 <div
                   key={iconData.iconName}
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground"
+                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground text-center"
                 >
                   {IconComponent && <IconComponent className="mb-3 h-6 w-6" />}
                   {iconData.iconTechName}

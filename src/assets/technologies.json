@@ -28,5 +28,65 @@
         "iconPack": "si"
       }
     ]
+  },
+  {
+    "cardName": "Backend",
+    "icons": [
+      {
+        "iconName": "FaNodeJs",
+        "iconTechName": "NodeJS",
+        "iconPack": "fa"
+      },
+      {
+        "iconName": "SiExpress",
+        "iconTechName": "Express",
+        "iconPack": "si"
+      },
+      {
+        "iconName": "SiSpringboot",
+        "iconTechName": "SpringBoot",
+        "iconPack": "si"
+      },
+      {
+        "iconName": "SiFirebase",
+        "iconTechName": "Firebase",
+        "iconPack": "si"
+      },
+      {
+        "iconName": "SiMysql",
+        "iconTechName": "MySQL",
+        "iconPack": "si"
+      },
+      {
+        "iconName": "SiMongodb",
+        "iconTechName": "MongoDB",
+        "iconPack": "si"
+      }
+    ]
+  },
+  {
+    "cardName": "DevOps",
+    "icons": [
+      {
+        "iconName": "SiGit",
+        "iconTechName": "Git",
+        "iconPack": "si"
+      },
+      {
+        "iconName": "SiGitlab",
+        "iconTechName": "GitLab CI/CD",
+        "iconPack": "si"
+      },
+      {
+        "iconName": "FaDocker",
+        "iconTechName": "Docker",
+        "iconPack": "fa"
+      },
+      {
+        "iconName": "SiRedhatopenshift",
+        "iconTechName": "Redhat Openshift",
+        "iconPack": "si"
+      }
+    ]
   }
 ]
