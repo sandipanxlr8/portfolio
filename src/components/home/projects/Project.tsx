@@ -26,10 +26,10 @@ function Project({ project }: ProjectPropsInterface) {
           className="rounded-2xl lg:w-[46rem] aspect-[16/10]"
         />
       </div>
-      <div className="py-6 px-6 sm:px-6 lg:px-14 lg:w-[55%]">
+      <div className="pt-0 sm:pt-0 lg:pt-6 pb-6 px-6 sm:px-6 lg:px-14 lg:w-[55%]">
         <h3 className="text-2xl">{project.name}</h3>
-        <p className="mt-6">{project.desc}</p>
-        <div className="mt-4">
+        <p className="mt-2">{project.desc}</p>
+        <div className="mt-1">
           {project.tech &&
             project.tech.map((tech) => (
               <Badge key={tech} className="mx-2">
@@ -37,7 +37,7 @@ function Project({ project }: ProjectPropsInterface) {
               </Badge>
             ))}
         </div>
-        <div className="mt-6">
+        <div className="mt-7">
           {project.isGithub && (
             <Button className="mr-4" size={"default"}>
               Check on GitHub

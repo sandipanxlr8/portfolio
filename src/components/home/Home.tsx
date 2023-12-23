@@ -16,10 +16,8 @@ function Home() {
       {/* landing section */}
       <div className="mt-12 lg:flex lg:flex-row">
         <div className="pt-14 lg:pt-[120px]">
-          <h2 className="text-3xl/10">
-            Hello 👋, I'm Sandipan Kalita.
-            <br />
-            you can call me Sandip, a passionate
+          <h2 className="text-2xl/10">
+            Hello 👋, I'm Sandipan Kalita. You can call me Sandip, a passionate
           </h2>
           <span className="text-[4rem]/[1.15] font-[monospace] half-highlight-accent-bg">
             Full Stack Developer

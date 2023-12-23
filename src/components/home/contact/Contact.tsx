@@ -1,4 +1,14 @@
+import { Mail, Github, Linkedin } from "lucide-react";
+
 function Contact() {
+  const email = "sandipankalitaofficial@gmail.com";
+  const githubUrl = "https://github.com/sandipanxlr8";
+  const linkedinUrl = "https://www.linkedin.com/in/sandipan-kalita";
+
+  const handleExternalLinkClick = (url: string) => {
+    window.open(url, "_blank", "noopener noreferrer");
+  };
+
   return (
     <div className="mt-[100px] mb-12">
       <h2 className="text-[5rem]/[1.15] lg:text-[10rem]/[1.15] font-[monospace]">
@@ -12,7 +22,21 @@ function Contact() {
           collaborations and conversations.
         </p>
 
-        <div className="mt-10">socials</div>
+        <div className="mt-10 font-bold">FIND ME AT</div>
+        <div className="flex flex-row mt-4">
+          <Mail
+            className="mx-4 h-16 w-16 hover:text-accent-foreground"
+            onClick={() => handleExternalLinkClick(`mailto:${email}`)}
+          />
+          <Github
+            className="mx-4 h-16 w-16 hover:text-accent-foreground"
+            onClick={() => handleExternalLinkClick(githubUrl)}
+          />
+          <Linkedin
+            className="mx-4 h-16 w-16 hover:text-accent-foreground"
+            onClick={() => handleExternalLinkClick(linkedinUrl)}
+          />
+        </div>
       </div>
     </div>
   );
