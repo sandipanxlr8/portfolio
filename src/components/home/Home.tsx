@@ -5,11 +5,14 @@ import { Download } from "lucide-react";
 // import { Copy } from "lucide-react";
 import Projects from "./projects/Projects";
 import Technologies from "./technologies/Technologies";
+import Contact from "./contact/Contact";
 
 function Home() {
   return (
     <div className="px-7 sm:px-7 md:px-[9rem]">
+      {/* Navbar section */}
       <Navbar />
+      {/* Navbar section ends */}
       {/* landing section */}
       <div className="mt-12 lg:flex lg:flex-row">
         <div className="pt-14 lg:pt-[120px]">
@@ -32,7 +35,7 @@ function Home() {
             </Button> */}
           </div>
         </div>
-        <div className="flex align-middle sm:mt-4">
+        <div className="flex align-middle mt-4">
           <img src={Working} alt="working logo" />
         </div>
       </div>
@@ -43,6 +46,9 @@ function Home() {
       {/* Technologies section */}
       <Technologies />
       {/* Technologies section ends */}
+      {/* Contact section */}
+      <Contact />
+      {/* Contact section ends */}
     </div>
   );
 }

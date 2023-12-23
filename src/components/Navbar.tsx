@@ -12,26 +12,23 @@ function Navbar({ className }: NavbarProps) {
 
   return (
     <nav
-      className={`w-full flex items-center justify-between pt-8 bg-white text-black 
+      className={`w-full flex items-center justify-between pt-8 
       z-50 ${className || ""}`}
     >
       {/* Logo */}
-      <a href="/" className="text-xl font-bold half-highlight-accent-bg">
+      <a href="/" className="text-xl font-bold text-primary">
         Sandipan Kalita.
       </a>
 
       {/* Links (Hidden on Mobile) */}
       <ul className="hidden md:flex lg:flex space-x-4">
         <li>
-          <a href="/blog" className="text-black-300 hover:text-black px-3 py-2">
+          <a href="/blog" className="text-black-300 px-3 py-2">
             Blog
           </a>
         </li>
         <li>
-          <a
-            href="/contact"
-            className="text-black-300 hover:text-black px-3 py-2"
-          >
+          <a href="/contact" className="text-black-300 px-3 py-2">
             Contact
           </a>
         </li>
@@ -57,14 +54,14 @@ function Navbar({ className }: NavbarProps) {
 
       {/* Mobile Menu (Shown when open) */}
       {isOpen && (
-        <ul className="lg:hidden absolute top-full left-0 w-full bg-gray-800 text-white z-60">
+        <ul className="lg:hidden absolute top-full left-0 w-ful z-60">
           <li>
-            <a href="/about" className="block px-3 py-2 hover:bg-gray-700">
+            <a href="/about" className="block px-3 py-2">
               About
             </a>
           </li>
           <li>
-            <a href="/contact" className="block px-3 py-2 hover:bg-gray-700">
+            <a href="/contact" className="block px-3 py-2">
               Contact
             </a>
           </li>
