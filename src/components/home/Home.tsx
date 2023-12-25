@@ -1,3 +1,4 @@
+import { saveAs } from "file-saver";
 import Navbar from "../Navbar";
 import Working from "@/assets/working.svg";
 import { Button } from "../ui/button";
@@ -8,6 +9,12 @@ import Technologies from "./technologies/Technologies";
 import Contact from "./contact/Contact";
 
 function Home() {
+  const handlePdfDownload = () => {
+    const pdfPath = "./src/assets/resume.pdf";
+
+    saveAs(pdfPath, "sandipan_resume.pdf");
+  };
+
   return (
     <div className="px-7 sm:px-7 md:px-[9rem]">
       {/* Navbar section */}
@@ -16,14 +23,16 @@ function Home() {
       {/* landing section */}
       <div className="mt-12 lg:flex lg:flex-row">
         <div className="pt-6 md:pl-6 lg:pt-[120px] text-xl/10">
-          <p>Hello 👋, I'm Sandipan Kalita.</p>
-          <p>A passionate</p>
+          <p>
+            Hello 👋, I'm Sandipan Kalita.
+            <br />A passionate
+          </p>
           <span className="text-[3rem]/[1.15] md:text-[4rem]/[1.15] font-[monospace] half-highlight-accent-bg">
             Full Stack Developer
           </span>
 
           <div className="mt-10">
-            <Button size={"lg"}>
+            <Button size={"lg"} onClick={handlePdfDownload}>
               Download Resume
               <Download className="ml-2 h-5 w-5" />
             </Button>
