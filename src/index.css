@@ -75,6 +75,11 @@
   }
 }
 
+.outline-text {
+  -webkit-text-stroke: 2px black; /* Set the outline width and color */
+  color: var(hsl(--background)); /* Set the inner text color */
+}
+
 /* 
 --primary: #766abd;
 --primary-content: #ffffff;

@@ -37,7 +37,7 @@ function Project({ project }: ProjectPropsInterface) {
               </Badge>
             ))}
         </div>
-        <div className="mt-7">
+        <div className="mt-6">
           {project.isGithub && (
             <Button className="mr-4" size={"default"}>
               Check on GitHub

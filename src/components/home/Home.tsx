@@ -15,13 +15,13 @@ function Home() {
       {/* Navbar section ends */}
       {/* landing section */}
       <div className="mt-12 lg:flex lg:flex-row">
-        <div className="pt-14 lg:pt-[120px]">
-          <h2 className="text-2xl/10">
-            Hello 👋, I'm Sandipan Kalita. You can call me Sandip, a passionate
-          </h2>
-          <span className="text-[4rem]/[1.15] font-[monospace] half-highlight-accent-bg">
+        <div className="pt-6 md:pl-6 lg:pt-[120px] text-xl/10">
+          <p>Hello 👋, I'm Sandipan Kalita.</p>
+          <p>A passionate</p>
+          <span className="text-[3rem]/[1.15] md:text-[4rem]/[1.15] font-[monospace] half-highlight-accent-bg">
             Full Stack Developer
           </span>
+
           <div className="mt-10">
             <Button size={"lg"}>
               Download Resume
@@ -33,7 +33,7 @@ function Home() {
             </Button> */}
           </div>
         </div>
-        <div className="flex align-middle mt-4">
+        <div className="flex align-middle mt-4 md:pr-6">
           <img src={Working} alt="working logo" />
         </div>
       </div>

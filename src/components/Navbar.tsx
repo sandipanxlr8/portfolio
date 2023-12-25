@@ -1,27 +1,19 @@
 import { useState } from "react";
 
-interface NavbarProps {
-  // Optional className prop for additional styling
-  className?: string;
-}
-
-function Navbar({ className }: NavbarProps) {
+function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
-    <nav
-      className={`w-full flex items-center justify-between pt-8 
-      z-50 ${className || ""}`}
-    >
+    <nav className={"w-full flex items-center justify-between pt-8 z-50"}>
       {/* Logo */}
       <a href="/" className="text-xl font-bold text-primary">
         Sandipan Kalita.
       </a>
 
       {/* Links (Hidden on Mobile) */}
-      <ul className="hidden md:flex lg:flex space-x-4">
+      <ul className="hidden sm:flex lg:flex space-x-4">
         <li>
           <a href="/blog" className="text-black-300 px-3 py-2">
             Blog
@@ -35,7 +27,7 @@ function Navbar({ className }: NavbarProps) {
       </ul>
 
       {/* Mobile Menu Toggle Button */}
-      <button className="md:hidden lg:hidden" onClick={handleClick}>
+      <button className="sm:hidden focus:outline-none" onClick={handleClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -52,20 +44,15 @@ function Navbar({ className }: NavbarProps) {
         </svg>
       </button>
 
-      {/* Mobile Menu (Shown when open) */}
       {isOpen && (
-        <ul className="lg:hidden absolute top-full left-0 w-ful z-60">
-          <li>
-            <a href="/about" className="block px-3 py-2">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="block px-3 py-2">
-              Contact
-            </a>
-          </li>
-        </ul>
+        <div className="sm:hidden absolute bg-gray-900 text-white rounded-lg py-2 px-4 top-10 right-0 mt-5 mr-6">
+          <a href="/blog" className="block px-2 py-2 hover:bg-gray-800">
+            Blog
+          </a>
+          <a href="/contact" className="block px-2 py-2 hover:bg-gray-800">
+            Contact
+          </a>
+        </div>
       )}
     </nav>
   );
