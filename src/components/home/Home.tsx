@@ -32,7 +32,11 @@ function Home() {
           </span>
 
           <div className="mt-10">
-            <Button size={"lg"} onClick={handlePdfDownload}>
+            <Button
+              size={"lg"}
+              className="neumorph-shadow"
+              onClick={handlePdfDownload}
+            >
               Download Resume
               <Download className="ml-2 h-5 w-5" />
             </Button>

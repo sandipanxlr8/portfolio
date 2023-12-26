@@ -23,7 +23,7 @@ function Project({ project }: ProjectPropsInterface) {
         <img
           src="../src/assets/project.png"
           alt="project image"
-          className="rounded-2xl lg:w-[46rem] aspect-[16/10]"
+          className="rounded-2xl lg:w-[46rem] aspect-[16/10] neumorph-shadow"
         />
       </div>
       <div className="pt-0 sm:pt-0 lg:pt-6 pb-6 px-6 sm:px-6 lg:px-14 lg:w-[55%]">
@@ -32,20 +32,20 @@ function Project({ project }: ProjectPropsInterface) {
         <div className="mt-1">
           {project.tech &&
             project.tech.map((tech) => (
-              <Badge key={tech} className="mx-2">
+              <Badge key={tech} className="mx-2 neumorph-shadow">
                 {tech}
               </Badge>
             ))}
         </div>
         <div>
           {project.isGithub && (
-            <Button className="mt-6 mr-4" size={"default"}>
+            <Button className="mt-6 mr-4 neumorph-shadow" size={"default"}>
               Check on GitHub
               <ExternalLink className="ml-3 h-5 w-5" />
             </Button>
           )}
           {project.isLive && (
-            <Button className="mt-6" size={"default"}>
+            <Button className="mt-6 neumorph-shadow" size={"default"}>
               Live
               <ExternalLink className="ml-3 h-5 w-5" />
             </Button>

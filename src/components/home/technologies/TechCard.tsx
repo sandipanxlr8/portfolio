@@ -10,7 +10,7 @@ interface TechCardProps {
 function TechCard({ tech }: TechCardProps) {
   return (
     <div className="mt-8">
-      <Card className="rounded-2xl">
+      <Card className="rounded-2xl bg-background neumorph-shadow-inset">
         <CardHeader>
           <CardTitle className="text-center">{tech.cardName}</CardTitle>
         </CardHeader>
@@ -35,7 +35,7 @@ function TechCard({ tech }: TechCardProps) {
               return (
                 <div
                   key={iconData.iconName}
-                  className="flex flex-col items-center rounded-3xl border-2 bg-popover px-1 py-3 md:px-4 md:py-6 hover:text-accent-foreground text-center"
+                  className="flex flex-col items-center rounded-3xl border-2 bg-background px-1 py-3 md:px-4 md:py-6 hover:text-accent-foreground text-center neumorph-shadow"
                 >
                   {IconComponent && <IconComponent className="mb-3 h-6 w-6" />}
                   <p className="text-sm md:text-base">
