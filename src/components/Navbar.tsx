@@ -15,12 +15,12 @@ function Navbar() {
       {/* Links (Hidden on Mobile) */}
       <ul className="hidden sm:flex lg:flex space-x-4">
         <li>
-          <a href="/blog" className="text-black-300 px-3 py-2">
+          <a href="/blog" className="px-3 py-2">
             Blog
           </a>
         </li>
         <li>
-          <a href="/contact" className="text-black-300 px-3 py-2">
+          <a href="/contact" className="px-3 py-2">
             Contact
           </a>
         </li>

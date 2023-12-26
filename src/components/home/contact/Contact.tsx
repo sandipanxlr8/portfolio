@@ -11,10 +11,10 @@ function Contact() {
 
   return (
     <div className="mt-[100px] mb-12">
-      <h2 className="text-[5rem]/[1.15] lg:text-[10rem]/[1.15] font-[monospace]">
+      <h2 className="text-[3.5rem]/[1.15] lg:text-[8rem]/[1.15] break-words font-medium">
         CONTACT
       </h2>
-      <div className="mx-6 mt-4">
+      <div className="sm:mx-6 mt-4">
         <p>
           Thank you for visiting my portfolio! I'm excited to connect with you.
           Whether you have a project in mind, a job opportunity, or just want to
@@ -22,7 +22,9 @@ function Contact() {
           collaborations and conversations.
         </p>
 
-        <div className="mt-10 font-bold">FIND ME AT</div>
+        <div className="mt-10 font-normal text-center sm:text-start">
+          FIND ME AT
+        </div>
         <div className="flex flex-row mt-4 justify-center md:justify-normal">
           <div className="text-center">
             <Mail

@@ -18,7 +18,7 @@ interface ProjectPropsInterface {
 
 function Project({ project }: ProjectPropsInterface) {
   return (
-    <div className="lg:flex lg:flex-row">
+    <div className="lg:flex lg:flex-row mt-4 sm:mt-0">
       <div className="px-6 py-6 lg:w-[45%]">
         <img
           src="../src/assets/project.png"
@@ -37,15 +37,15 @@ function Project({ project }: ProjectPropsInterface) {
               </Badge>
             ))}
         </div>
-        <div className="mt-6">
+        <div>
           {project.isGithub && (
-            <Button className="mr-4" size={"default"}>
+            <Button className="mt-6 mr-4" size={"default"}>
               Check on GitHub
               <ExternalLink className="ml-3 h-5 w-5" />
             </Button>
           )}
           {project.isLive && (
-            <Button size={"default"}>
+            <Button className="mt-6" size={"default"}>
               Live
               <ExternalLink className="ml-3 h-5 w-5" />
             </Button>

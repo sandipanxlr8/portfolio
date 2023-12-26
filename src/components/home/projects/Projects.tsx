@@ -4,7 +4,7 @@ import projects from "@/assets/projects.json";
 function Projects() {
   return (
     <div className="mt-[100px]">
-      <h2 className="text-[4rem]/[1.15] lg:text-[10rem]/[1.15] font-[monospace] break-words">
+      <h2 className="text-[3.5rem]/[1.15] lg:text-[8rem]/[1.15] break-words font-medium">
         PROJECTS
       </h2>
       {projects.map((project) => (

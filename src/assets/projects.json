@@ -20,7 +20,7 @@
   {
     "name": "Project3",
     "desc": "Lorem ipsum dolor sit amet consectetur. Ipsum malesuada cras volutpat morbi eget a cursus nunc quis. Eleifend non est diam est.",
-    "tech": ["tech1", "test2", "tech3", "tech4"],
+    "tech": ["tech1", "test2", "tech3", "tech4", "random tech5", "tech6"],
     "isGithub": false,
     "githubUrl": "",
     "isLive": true,

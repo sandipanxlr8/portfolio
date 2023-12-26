@@ -27,7 +27,7 @@ function Home() {
             Hello 👋, I'm Sandipan Kalita.
             <br />A passionate
           </p>
-          <span className="text-[3rem]/[1.15] md:text-[4rem]/[1.15] font-[monospace] half-highlight-accent-bg">
+          <span className="text-[3rem]/[1.15] md:text-[3.5rem]/[1.15] font-[monospace] half-highlight-accent-bg">
             Full Stack Developer
           </span>
 
@@ -47,12 +47,15 @@ function Home() {
         </div>
       </div>
       {/* landing section ends*/}
+
       {/* projects section */}
       <Projects />
       {/* projects section ends */}
+
       {/* Technologies section */}
       <Technologies />
       {/* Technologies section ends */}
+
       {/* Contact section */}
       <Contact />
       {/* Contact section ends */}
