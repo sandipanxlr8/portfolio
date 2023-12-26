@@ -35,10 +35,10 @@ function TechCard({ tech }: TechCardProps) {
               return (
                 <div
                   key={iconData.iconName}
-                  className="flex flex-col items-center rounded-3xl border-2 bg-background px-1 py-3 md:px-4 md:py-6 hover:text-accent-foreground text-center neumorph-shadow"
+                  className="flex flex-col items-center rounded-3xl border-2 bg-background px-1 py-3 md:px-4 md:py-6 hover:text-accent-foreground text-center neumorph-shadow hover:border-primary"
                 >
                   {IconComponent && <IconComponent className="mb-3 h-6 w-6" />}
-                  <p className="text-sm md:text-base">
+                  <p className="text-sm md:text-base break-words">
                     {iconData.iconTechName}
                   </p>
                 </div>

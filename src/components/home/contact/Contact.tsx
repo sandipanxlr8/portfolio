@@ -10,7 +10,7 @@ function Contact() {
   };
 
   return (
-    <div className="mt-[100px] mb-12">
+    <div id="contact" className="mt-[100px] mb-12">
       <h2 className="text-[3.5rem]/[1.15] lg:text-[8rem]/[1.15] break-words font-medium">
         CONTACT
       </h2>

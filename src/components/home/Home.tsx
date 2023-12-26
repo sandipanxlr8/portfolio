@@ -34,7 +34,7 @@ function Home() {
           <div className="mt-10">
             <Button
               size={"lg"}
-              className="neumorph-shadow"
+              className="neumorph-shadow rounded-xl"
               onClick={handlePdfDownload}
             >
               Download Resume

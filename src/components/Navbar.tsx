@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -13,18 +14,14 @@ function Navbar() {
       </a>
 
       {/* Links (Hidden on Mobile) */}
-      <ul className="hidden sm:flex lg:flex space-x-4">
-        <li>
-          <a href="/blog" className="px-3 py-2">
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="/contact" className="px-3 py-2">
-            Contact
-          </a>
-        </li>
-      </ul>
+      <div className="hidden sm:flex lg:flex space-x-4">
+        <a href="/blog" className="px-3 py-2 hover:text-primary">
+          Blog
+        </a>
+        <Link to="contact" smooth={true} duration={1500}>
+          <p className="px-3 py-2 hover:text-primary">Contact</p>
+        </Link>
+      </div>
 
       {/* Mobile Menu Toggle Button */}
       <button className="sm:hidden focus:outline-none" onClick={handleClick}>
@@ -45,13 +42,23 @@ function Navbar() {
       </button>
 
       {isOpen && (
-        <div className="sm:hidden absolute bg-gray-900 text-white rounded-lg py-2 px-4 top-10 right-0 mt-5 mr-6">
-          <a href="/blog" className="block px-2 py-2 hover:bg-gray-800">
+        <div className="sm:hidden absolute bg-gray-900 text-white rounded-lg py-2 px-4 top-10 right-0 mt-6 mr-7">
+          <a
+            href="/blog"
+            className="block px-2 py-2 hover:bg-gray-800"
+            onClick={handleClick}
+          >
             Blog
           </a>
-          <a href="/contact" className="block px-2 py-2 hover:bg-gray-800">
-            Contact
-          </a>
+          <hr />
+          <Link to="contact" smooth={true} duration={1000}>
+            <p
+              className="block px-2 py-2 hover:bg-gray-800"
+              onClick={handleClick}
+            >
+              Contact
+            </p>
+          </Link>
         </div>
       )}
     </nav>
