@@ -15,7 +15,7 @@ function TechCard({ tech }: TechCardProps) {
           <CardTitle className="text-center">{tech.cardName}</CardTitle>
         </CardHeader>
         <CardContent className="px-4 md:px-6">
-          <div className="grid grid-cols-3 md:grid-cols-2 gap-3">
+          <div className="grid grid-cols-3 md:grid-cols-2 gap-4">
             {tech.icons.map((iconData) => {
               let IconComponent;
               switch (iconData.iconPack) {
@@ -35,7 +35,7 @@ function TechCard({ tech }: TechCardProps) {
               return (
                 <div
                   key={iconData.iconName}
-                  className="flex flex-col items-center rounded-3xl border-2 bg-background px-1 py-3 md:px-4 md:py-6 hover:text-accent-foreground text-center neumorph-shadow hover:border-primary"
+                  className="flex flex-col items-center rounded-3xl border-2 bg-background px-1 py-3 md:px-4 md:py-6 hover:text-accent-foreground text-center neumorph-shadow hover:border-primary hover:scale-110"
                 >
                   {IconComponent && <IconComponent className="mb-3 h-6 w-6" />}
                   <p className="text-sm md:text-base break-words">
