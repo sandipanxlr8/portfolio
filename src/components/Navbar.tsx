@@ -15,11 +15,14 @@ function Navbar() {
 
       {/* Links (Hidden on Mobile) */}
       <div className="hidden sm:flex lg:flex space-x-4">
-        <a href="/blog" className="px-3 py-2 hover:text-primary">
+        {/* <a href="/blog" className="px-3 py-2 hover:text-primary">
           Blog
-        </a>
+        </a> */}
+        <span className="px-3 py-2 hover:text-primary">Blog (Coming Soon)</span>
         <Link to="contact" smooth={true} duration={1500}>
-          <p className="px-3 py-2 hover:text-primary">Contact</p>
+          <p className="px-3 py-2 hover:text-primary hover:cursor-pointer">
+            Contact
+          </p>
         </Link>
       </div>
 
@@ -43,17 +46,20 @@ function Navbar() {
 
       {isOpen && (
         <div className="sm:hidden absolute bg-gray-900 text-white rounded-lg py-2 px-4 top-10 right-0 mt-6 mr-7">
-          <a
+          {/* <a
             href="/blog"
             className="block px-2 py-2 hover:bg-gray-800"
             onClick={handleClick}
           >
             Blog
-          </a>
+          </a> */}
+          <span className="block px-2 py-2 hover:bg-gray-800">
+            Blog (Coming Soon)
+          </span>
           <hr />
           <Link to="contact" smooth={true} duration={1000}>
             <p
-              className="block px-2 py-2 hover:bg-gray-800"
+              className="block px-2 py-2 hover:bg-gray-800 hover:cursor-pointer"
               onClick={handleClick}
             >
               Contact

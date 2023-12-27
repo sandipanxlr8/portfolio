@@ -28,21 +28,21 @@ function Contact() {
         <div className="flex flex-row mt-4 justify-center md:justify-normal">
           <div className="text-center">
             <Mail
-              className="mx-4 h-12 w-12 hover:text-accent-foreground"
+              className="mx-4 h-12 w-12 hover:text-accent-foreground hover:cursor-pointer"
               onClick={() => handleExternalLinkClick(`mailto:${email}`)}
             />
             <p>Mail</p>
           </div>
           <div className="text-center">
             <Linkedin
-              className="mx-4 h-12 w-12 hover:text-accent-foreground"
+              className="mx-4 h-12 w-12 hover:text-accent-foreground hover:cursor-pointer"
               onClick={() => handleExternalLinkClick(linkedinUrl)}
             />
             <p>LinkedIn</p>
           </div>
           <div className="text-center">
             <Github
-              className="mx-4 h-12 w-12 hover:text-accent-foreground"
+              className="mx-4 h-12 w-12 hover:text-accent-foreground hover:cursor-pointer"
               onClick={() => handleExternalLinkClick(githubUrl)}
             />
             <p>GitHub</p>
