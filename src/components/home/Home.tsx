@@ -7,6 +7,7 @@ import { Download } from "lucide-react";
 import Projects from "./projects/Projects";
 import Technologies from "./technologies/Technologies";
 import Contact from "./contact/Contact";
+import UpArrowScroll from "../UpArrowScroll";
 
 function Home() {
   const handlePdfDownload = () => {
@@ -63,6 +64,8 @@ function Home() {
       {/* Contact section */}
       <Contact />
       {/* Contact section ends */}
+
+      <UpArrowScroll />
     </div>
   );
 }

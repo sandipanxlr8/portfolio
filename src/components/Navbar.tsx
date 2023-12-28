@@ -19,7 +19,7 @@ function Navbar() {
           Blog
         </a> */}
         <span className="px-3 py-2 hover:text-primary">Blog (Coming Soon)</span>
-        <Link to="contact" smooth={true} duration={1500}>
+        <Link to="contact" smooth="easeInOutCubic" duration={2000}>
           <p className="px-3 py-2 hover:text-primary hover:cursor-pointer">
             Contact
           </p>
@@ -57,7 +57,7 @@ function Navbar() {
             Blog (Coming Soon)
           </span>
           <hr />
-          <Link to="contact" smooth={true} duration={1000}>
+          <Link to="contact" smooth="easeInOutCubic" duration={2200}>
             <p
               className="block px-2 py-2 hover:bg-gray-800 hover:cursor-pointer"
               onClick={handleClick}
